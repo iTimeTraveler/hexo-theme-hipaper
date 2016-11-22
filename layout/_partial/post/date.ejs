@@ -1,0 +1,5 @@
+<% if (!is_current("about", false)){ %>
+	Posted on <a href="<%- url_for(post.path) %>" class="<%= class_name %>">
+	  <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MMMM D, YYYY') %></time>
+	</a>
+<% } %>

@@ -1,0 +1,43 @@
+<div class="archives-wrap" style="margin: 0px;">
+    <div class="row">
+        <!-- 标签云 -->
+        <div class="archives-tags-wrap">
+            <% if(site.tags.length) { %>
+                <blockquote>
+                <%- tagcloud({min_font: 14, max_font: 28}) %>
+                </blockquote>
+            <% } %>
+        </div>
+
+        <!-- 标签云2 -->
+        <!-- 
+        <div id='tag_cloud' class="tags">
+            <% site.tags.map(function(tag){  %>
+                <a href="#<%= tag.name %>" title="<%= tag.name %>" rel="<%= tag.length %>"><%= tag.name %></a>
+            <% }) %>
+        </div> 
+        -->
+
+        <!-- 标签列表 -->
+
+        <% site.tags.sort('name').map(function(tag){  %>
+        <div class="archives-wrap">
+            <div class="archive-year-wrap" id="<%= tag.name %>">
+                <h1 class="archive-tag"><%= tag.name %></h1>
+            </div>
+            <div class="archives">
+                <% tag.posts.sort('-date').map(function(post, i){  %>
+                    <%- partial('_partial/archive-post', {post: post, index: true}) %>
+                    <% if (post.subtitle && post.subtitle.length) { %>
+                        <h3 class="post-subtitle">
+                            <%- post.subtitle %>
+                        </h3>
+                    <% } %>
+                <% }) %>
+            </div>
+        </div>
+        <% }) %>
+
+
+    </div>
+</div>

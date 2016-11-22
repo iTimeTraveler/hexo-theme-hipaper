@@ -1,0 +1,145 @@
+@import "nib"
+@import "_variables"
+@import "_util/mixin"
+@import "_util/grid"
+
+global-reset()
+
+input, button
+  margin: 0
+  padding: 0
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+
+@font-face
+  font-family: "微软雅黑"
+  font-style: normal
+  font-weight: normal
+  src: url(font-icon-path + ".eot?v=#" + font-icon-version)
+  src: url(font-icon-path + ".eot?#iefix&v=#" + font-icon-version) format("embedded-opentype"),
+       url(font-icon-path + ".woff?v=#" + font-icon-version) format("woff"),
+       url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
+       url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
+
+html, body, #container
+  height: 100%
+
+body
+  background: color-background
+  font: font-size font-normal
+  -webkit-text-size-adjust: 100%
+  text-rendering: optimizelegibility;
+
+.article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6
+  color: color-black
+
+#rocket
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: block;
+    visibility: hidden;
+    width: 26px;
+    height: 48px;
+    background: url(images/rocket.png) no-repeat 50% 0;
+    opacity: 0;
+    -webkit-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    -moz-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    @media mq-mobile
+      right: 12px;
+      bottom: 20px;
+    #rocket i {
+      display: block;
+      margin-top: 48px;
+      height: 14px;
+      background: url(images/rocket.png) no-repeat 50% -48px;
+      opacity: .5;
+      -webkit-transition: -webkit-transform .2s;
+      -moz-transition: -moz-transform .2s;
+      transition: transform .2s;
+      -webkit-transform-origin: 50% 0;
+      -moz-transform-origin: 50% 0;
+      transform-origin: 50% 0; }
+  #rocket:hover {
+    background-position: 50% -62px; }
+    #rocket:hover i {
+      background-position: 50% 100%;
+      -webkit-animation: flaming .7s infinite;
+      -moz-animation: flaming .7s infinite;
+      animation: flaming .7s infinite; }
+  #rocket.show {
+    visibility: visible;
+    opacity: 1; }
+  #rocket.launch {
+    background-position: 50% -62px;
+    opacity: 0;
+    -webkit-transform: translateY(-500px);
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    transform: translateY(-500px);
+    pointer-events: none; }
+    #rocket.launch i {
+      background-position: 50% 100%;
+      -webkit-transform: scale(1.4, 3.2);
+      -moz-transform: scale(1.4, 3.2);
+      transform: scale(1.4, 3.2); } 
+
+.outer
+  clearfix()
+  max-width: (column-width + gutter-width) * columns + gutter-width
+  margin: 40px auto
+  padding: 0 gutter-width
+
+.inner
+  column(columns)
+
+.left, .alignleft
+  float: left
+
+.right, .alignright
+  float: right
+
+.clear
+  clear: both
+
+#container
+  position: relative
+
+.mobile-nav-on
+  overflow: hidden
+
+#wrap
+  width: 100%
+  top: 0
+  left: 0
+  transition: 0.2s ease-out
+  z-index: 1
+  background: color-background
+  .mobile-nav-on &
+    left: mobile-nav-width
+
+if sidebar and sidebar isnt bottom
+  #main
+    @media mq-normal
+      column(main-column)
+
+if sidebar is left
+  @media mq-normal
+    #main
+      float: right
+
+@import "_extend"
+@import "_partial/header"
+@import "_partial/header-post"
+@import "_partial/article"
+@import "_partial/comment"
+@import "_partial/archive"
+@import "_partial/footer"
+@import "_partial/highlight"
+@import "_partial/mobile"
+@import "_partial/insight"
+
+if sidebar
+  @import "_partial/sidebar"

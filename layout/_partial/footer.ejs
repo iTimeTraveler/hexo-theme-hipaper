@@ -1,0 +1,25 @@
+<footer id="footer" class="site-footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; <%= date(new Date(), 'YYYY') %> <%= config.title || config.author %> All Rights Reserved.
+      </div>
+      <div class="site-credit">
+        <%= __('theme_by') %> <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>

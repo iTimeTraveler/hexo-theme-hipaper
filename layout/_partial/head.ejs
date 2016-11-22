@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= __(title.toLowerCase()) %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <% if (page.keywords){ %>
+    <meta name="keywords" content="<%- page.keywords %>" />
+  <% } else if (theme.keywords){ %>
+    <meta name="keywords" content="<%- theme.keywords %>" />
+  <% } else if (page.tags && page.tags.length){ %>
+  <meta name="keywords" content="<% page.tags.forEach(function(tag, i){ %><%- tag.name %><% }) %>" />
+  <% }%>
+  <% if (theme.google_site_verification){ %>
+    <meta name="google-site-verification" content="<%- theme.google_site_verification %>" />
+  <% } %>
+  <% if (theme.baidu_site_verification){ %>
+    <meta name="baidu-site-verification" content="<%- theme.baidu_site_verification %>" />
+  <% } %>
+  <% if (theme.qihu_site_verification){ %>
+    <meta name="360-site-verification" content="<%- theme.qihu_site_verification %>" />
+  <% } %>
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <% if (theme.rss){ %>
+    <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  <link rel="icon" href="<%= config.root %><% if (theme.favicon){ %><%- theme.favicon %><% } else {%>css/images/favicon.ico<% } %>">
+  <% if (config.highlight.enable){ %>
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% } %>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <%- css('css/style') %>
+
+  <%- js('js/jquery-3.1.1.min.js') %>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" >
+  <link rel="stylesheet" href="<%- config.root %>css/hiero.css" >
+  <link rel="stylesheet" href="<%- config.root %>css/glyphs.css" >
+
+</head>

@@ -1,0 +1,162 @@
+.archives-wrap
+  margin: block-margin 0
+
+.archives
+  clearfix()
+  margin-left: 2em
+
+.archive-year-wrap
+  margin-bottom: 1em
+  h1
+    font-size: 1.5em
+
+.archive-year
+  @extend $block-caption
+  color: color-black
+
+.archive-year:before
+  font-family: "FontAwesome"
+  content: "\f273"
+  margin-right: .2em
+
+.archives-tags-wrap
+  blockquote
+    padding: 1em
+    margin: 1em 0 0 0
+    font-size: 1.2em
+    font-weight: bold
+    color: color-black
+    text-align: center;
+    border-left: 0px solid color-theme
+    background: rgba(208,211,248,0.15)
+    a
+      color: color-black
+      margin: .2em
+      &:hover
+        color: color-theme
+
+.archive-tag
+  @extend $block-caption
+  text-transform: none;
+  color: color-black
+
+.archive-tag:before
+  font-family: "FontAwesome"
+  content: "\f02c"
+  margin-right: .2em
+
+.archives-category-wrap
+  margin: 1em 0
+  blockquote
+    padding: 1em
+    font-size: 1.1em
+    font-weight: bold
+    line-height: 1.7em;
+    color: color-theme
+    text-align: left;
+    border-left: 0px solid color-theme
+    background: rgba(208,211,248,0.15)
+    a
+      color: color-black
+      margin: .2em
+      &:hover
+        color: color-theme
+      &:before
+        font-family: "FontAwesome"
+        content: "\f0da"
+        margin-right: .5em
+
+.archive-category
+  @extend $block-caption
+  text-transform: none;
+  color: color-black
+
+.archive-category:before
+  font-family: "FontAwesome"
+  content: "\f07c"
+  margin-right: .3em
+
+.archives
+  column-gap: 10px
+  @media mq-tablet
+    column-count: 1
+  @media mq-normal
+    column-count: 1
+
+.archive-article
+  avoid-column-break()
+
+.archive-article-inner
+  padding: 0px
+  margin-bottom: 0px
+
+.archive-article-title
+  font-size: 1.2em
+  text-decoration: none
+  color: color-default
+  transition: color 0.2s
+  line-height: line-height
+  border-left: 1px solid color-black;
+  padding-left: 15px;
+  &:hover
+    color: color-link-hover
+
+.archive-article-footer
+  margin-top: 1em
+
+.archive-article-date
+  min-width: 85px
+  float: left
+  color: #999
+  text-decoration: none
+  line-height: 1.6em
+  margin-right: 15px
+  display: block
+  font-size: 1.1em
+  font-family: font-futura-pt
+
+.archive-article-date:hover
+  color: color-theme
+
+#page-nav
+  clearfix()
+  margin: block-margin auto
+  background: #fff
+  border: 1px solid color-border
+  border-radius: 3px
+  text-align: center
+  color: color-grey
+  a, span
+    padding: 10px 20px
+    line-height: 1
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      background: color-theme
+      color: #fff
+  .prev
+    color: #fff
+    background: color-black
+    float: left
+    &:before
+      font-family: "FontAwesome"
+      content: "\f053"
+      margin-right: .5em
+  .next
+    color: #fff
+    background: color-black
+    float: right
+    &:after
+      font-family: "FontAwesome"
+      content: "\f054"
+      margin-left: .5em
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: color-default
+    font-weight: bold
+  .space
+    color: color-border

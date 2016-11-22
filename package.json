@@ -1,0 +1,20 @@
+{
+  "name": "hexo-theme-fashion",
+  "version": "1.0.0",
+  "description": "A cool theme for Hexo.",
+  "author": "iTimeTraveler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iTimeTraveler/hexo-theme-fashion"
+  },
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/iTimeTraveler/hexo-theme-fashion",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-git": "~0.2.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}

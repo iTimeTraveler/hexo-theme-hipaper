@@ -1,0 +1,68 @@
+<article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post()){ %>style="width: 66%; float:left;"<% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    <%- partial('post/gallery') %>
+    <% if (post.link || post.title){ %>
+      <header class="article-header">
+        <%- partial('post/title', {class_name: 'article-title'}) %>
+      </header>
+    <% } %>
+    <div class="article-meta">
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %>
+        <% if (post.photos != ""){ %>
+          <div class="entry-thumbnail">
+            <a href="<%- url_for(post.path) %>"><img width="250" height="175" src="<%= post.photos[0] %>" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+          </div>
+          <div class="entry-summary">
+          <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>
+
+        <% } else { %>
+
+          <% if (theme.random_thumb){ %>
+            <div class="entry-thumbnail">
+              <a href="<%- url_for(post.path) %>"><img width="250" height="175" src="http://lorempixel.com/500/350/city/<%- Math.ceil(Math.random() * 10) %>" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            </div>
+            <div class="entry-summary">
+            <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>
+          <% } else { %>
+            <div class="entry-summary" style="margin-left:0;">
+            <%- truncate(strip_html(post.content), {length: 350, omission: '...'}) %>
+          <% } %>
+
+        <% } %>
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>
+          </p>
+        </div>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+    <footer class="entry-meta entry-footer">
+      <%- partial('post/category') %>
+      <%- partial('post/tag') %>
+      <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname)){ %>
+        <%- partial('comment') %>
+      <% } %>
+    </footer>
+  </div>
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+</article>
+
+<!-- Table of Contents -->
+<% if (!index && is_post()){ %>
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title"><%= __('contents') %></strong>
+    <% if (toc(post.content) != ""){ %>
+      <%- toc(post.content) %>
+    <% } else { %>
+    <ol class="toc"><%= __('none') %></ol>
+    <% } %>
+    </div>
+  </aside>
+<% } %>
