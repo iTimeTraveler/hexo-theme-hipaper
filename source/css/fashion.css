@@ -473,7 +473,7 @@ object {
 	color: #333;
 	font-size: 1.2em;
 	font-weight: 400;
-	font-family: Oswald, Arial, Helvetica, sans-serif;
+	font-family: Oswald, "方正姚体", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
 	line-height: 50px;
@@ -502,11 +502,15 @@ object {
 		max-width: 16em;
 		overflow: hidden;
 		background: #333;
+		z-index: 1;
 		}
 	#main-navigation:target > .sf-menu > ul {
 		max-height: 900px;
 		max-width: 100%;
 		z-index: 901;
+		}
+	.main-navigation-open > .sf-menu > ul {
+		max-height: 400px !important;
 		}
 	#main-navigation > .sf-menu > ul > li {
 		float: none;
