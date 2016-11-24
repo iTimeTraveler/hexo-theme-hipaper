@@ -1,6 +1,6 @@
 # Hipaper
 
-**A fashion newspaper, blog theme for [Hexo]**. [**Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
+**A fashion newspaper, blog theme for Hexo**. [**Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
 
 
 
