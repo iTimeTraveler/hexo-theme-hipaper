@@ -62,9 +62,6 @@ a {
 	   -moz-transition: all 0.14s ease 0s; 
 		 -o-transition: all 0.14s ease 0s; 
 	}
-a:visited {
-	color: #1fa0ae;
-	}
 a:hover,
 a:focus,
 a:active {
@@ -427,11 +424,11 @@ object {
 #main-navigation .sf-menu > ul > li:after {
 	width: 6px;
 	float: left;
-	margin-top: 0px;
+	margin-top: 6px;
 	content: "/";
 	display: block;
 	color: #e6e6e6;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-family: Arial, Helvetica, sans-serif;
 	}
 #main-navigation .sf-menu > ul > li:last-child:after {
