@@ -15,8 +15,7 @@ Tags: black, white, two-columns, fixed-layout, threaded-comments, full-width-tem
 ----------------------------------------------- */
 body {
 	color: #333;
-	font-weight: 400;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, Arial, Helvetica, Microsoft Yahei;
 	line-height: 1.8;
 	background: #fff;
 	}
@@ -609,7 +608,7 @@ object {
 	color: #a6a6a6;
 	font-size: .9em;
 	font-weight: 300;
-	font-family: Oswald, Arial, Helvetica, sans-serif;
+	font-family: Oswald,"华文中宋", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	}
 .entry-meta a {
