@@ -1,6 +1,6 @@
 # Hipaper
 
-
+**A fashion newspaper, blog theme for [Hexo]**. [**Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
 
 
 
@@ -39,6 +39,9 @@
 
 
 
+## Browser support
+
+![](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/browser-support.png?raw=true)
 
 
 
@@ -50,3 +53,12 @@ Looking forward to your pull request.
 
 > Special thanks to ATHEMES, who designed the original theme [FASHIONISTA for Wordpress](http://athemes.com/theme/fashionista/).
 
+
+## License
+
+Hiero is under the MIT license. See the [LICENSE](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/LICENSE) file for details.
+
+
+[Hexo]: https://hexo.io/
+[Fancybox]: http://fancyapps.com/fancybox/
+[Font Awesome]: http://fontawesome.io/
