@@ -23,7 +23,7 @@
 
           <% if (theme.random_thumb){ %>
             <div class="entry-thumbnail">
-              <a href="<%- url_for(post.path) %>"><img src="http://lorempixel.com/500/350/city/<%- Math.ceil(Math.random() * 10) %>" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+              <a href="<%- url_for(post.path) %>"><img src="http://lorempixel.com/750/450/city/<%- Math.ceil(Math.random() * 10) %>" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
             </div>
             <div class="entry-summary">
             <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>
