@@ -656,7 +656,7 @@ object {
 	}
 .entry-footer-hr {
 	margin: 1px 0 0 0 ;
-	border-top: 3px solid #333;
+	border-top: 2px solid #333;
 	}
 .more-link,
 .page-links {
@@ -966,7 +966,7 @@ body.search .page .entry-footer {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border-bottom: 1px solid #333;
+	border-bottom: 2px solid #333;
 	}
 
 /* Make sure select elements fit in widgets */
