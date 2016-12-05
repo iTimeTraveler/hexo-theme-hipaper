@@ -1,9 +1,9 @@
 # Hipaper
 
-**A fashion newspaper, blog theme for Hexo**. [**☞ Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
+**A fashional newspaper, blog theme for Hexo**. [**☞ Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
 
 
-![](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/hipaper-preview.png)
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/hipaper-preview.png)
 
 
 
@@ -42,11 +42,11 @@
 
 Hipaper use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
-![code `default` theme Preview](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/code-theme-default.png)
+![code `default` theme Preview](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/code-theme-default.png)
 
 Above preview picture is default theme. the image below show other five Highlight themes.
 
-![code themes](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/code-theme.jpg?raw=true)
+![code themes](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/code-theme.jpg?raw=true)
 
 Modify `highlight_theme` in hipaper/_config.yml.
 
@@ -80,7 +80,7 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 Hipaper use `Insight Search` to help you search anything inside your site without any third-party plugin.
 
-![](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/search-preview.png)
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/search-preview.png)
 
 ```yml
 # Search
@@ -121,7 +121,7 @@ disqus_shortname:
 
 ## Browser support
 
-![](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/browser-support.png?raw=true)
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/browser-support.png?raw=true)
 
 
 
