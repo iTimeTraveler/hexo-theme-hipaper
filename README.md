@@ -3,6 +3,7 @@
 **A fashion newspaper, blog theme for Hexo**. [**Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
 
 
+![](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/hipaper-preview.png)
 
 
 
