@@ -80,6 +80,8 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 Hipaper use `Insight Search` to help you search anything inside your site without any third-party plugin.
 
+![](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/search-preview.png)
+
 ```yml
 # Search
 search:
