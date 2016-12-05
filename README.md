@@ -42,7 +42,7 @@
 
 Hipaper use [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for your code block. We have six options in total: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
-![code `default` theme Preview](https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/code-theme-default.png)
+![code `default` theme Preview](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/source/preview/code-theme-default.png)
 
 Above preview picture is default theme. the image below show other five Highlight themes.
 
