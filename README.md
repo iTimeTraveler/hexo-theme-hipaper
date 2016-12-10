@@ -1,8 +1,8 @@
 # Hipaper
 
-**A fashional newspaper, blog theme for Hexo**. [**☞ Demo**](https://itimetraveler.github.io/hexo-theme-hipaper/)
+**A fashional newspaper, blog theme for Hexo**. 
 
-- [**查看中文使用文档**](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/README.cn.md)
+- [**☞ Preview Demo **](https://itimetraveler.github.io/hexo-theme-hipaper/) | [**查看中文使用文档**](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/README.cn.md)
 
 
 ![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/hipaper-preview.png)
