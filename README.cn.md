@@ -42,11 +42,11 @@
 
 ### 代码高亮
 
-Hipaper 使用 [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) 作为代码主题. 共有一下六种选项: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
+Hipaper 使用 [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) 作为代码主题. 共有以下六种选项: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`
 
 ![code `default` theme Preview](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/code-theme-default.png)
 
-默认如上图，其他五种主题如下.
+默认高亮配色如上图， 另外的五种配色如下.
 
 ![code themes](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/code-theme.jpg?raw=true)
 
@@ -64,7 +64,7 @@ highlight_theme: default
 
 ### 侧边栏
 
-主体中的 `sidebar` 字段可以设置为 `left`或`right`，用来控制侧边栏显示在页面左侧还是右侧。
+主题_config.yml文件中的 `sidebar` 字段可以设置为 `left`或`right`，用来控制侧边栏显示在页面左侧还是右侧。
 Hipaper 拥有以下7种侧边栏组件:
 
 - search （搜索框）
@@ -75,10 +75,10 @@ Hipaper 拥有以下7种侧边栏组件:
 - tagcloud （标签云）
 - archive （归档栏）
 
-以上默认主题中均已启用. 您可以在 `widget` 字段中设置显示哪些以及顺序。
+以上组件在主题中均已默认启用.您可以在 `widget` 字段中设置显示哪些以及顺序。
 
 
-### Search
+### 站内搜索
 
 Hipaper 使用 `Insight Search` 来帮助大家使用站内搜索.
 
@@ -101,7 +101,7 @@ $ npm install -S hexo-generator-json-content
 
 ### Fancybox
 
-Hipaper 使用 [Fancybox] 来展示文章图片预览.
+Hipaper 使用 [Fancybox] 来提供文章图片预览.
 
 ```
 ![img caption](img url)
