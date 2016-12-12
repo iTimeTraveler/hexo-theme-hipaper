@@ -44,10 +44,10 @@ widgets:
 
 # Social Links
 # Key is the name of FontAwsome icon.
-# Value is the target link (E.g. GitHub: https://github.com/iissnan)
+# Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
   Github: https://github.com/iTimeTraveler
-  Weibo: http://weibo.com/xueyubowen
+  Weibo: 
   Twitter: 
   Facebook: 
   Google-plus: 
