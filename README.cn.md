@@ -5,6 +5,8 @@
 
 ![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/hipaper-preview.png)
 
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/mobile-preview.png)
+
 
 <!--more-->
 
@@ -115,7 +117,7 @@ Hipaper 已完全支持原生的多说、 Disqus评论功能. 您可以在 `hipa
 ```yml
 # comment ShortName, you can choose only ONE to display.
 duoshuo_shortname: iTimeTraveler
-disqus_shortname: 
+disqus_shortname:
 ```
 
 
