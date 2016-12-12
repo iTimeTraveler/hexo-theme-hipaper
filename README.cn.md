@@ -3,11 +3,11 @@
 **A fashional newspaper, blog theme for Hexo**. [**☞ 点击预览**](https://itimetraveler.github.io/hexo-theme-hipaper/)
 
 
-![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/hipaper-preview.png)
-
---------
+![](https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/master/gallery/hipaper-demo-screen.png)
 
 ![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/mobile-preview.png)
+
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/hipaper-preview.png)
 
 
 <!--more-->
@@ -38,9 +38,6 @@
 
 
 ## 特性
-
-
-![](https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/master/gallery/hipaper-demo-screen.png)
 
 
 ### 代码高亮
