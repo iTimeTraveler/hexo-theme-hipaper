@@ -5,7 +5,7 @@
 
 ![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/hipaper-preview.png)
 
-
+![](https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/master/gallery/hipaper-demo-screen.png)
 
 
 <!--more-->
