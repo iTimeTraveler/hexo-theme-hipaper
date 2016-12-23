@@ -1,4 +1,20 @@
-<header id="allheader" class="site-header" role="banner">
+<% if (is_current("about", false) && theme.about_big_image){ %>
+  <div style="background:#fff; width: 100%;">
+      <div style="max-height:900px; min-height:200px; overflow: hidden;">
+        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
+      </div>
+  </div>
+
+  <div class="blur" style="background:#fff;width: 100%; position: absolute; top:0; height: 207px; overflow: hidden;">
+      <div style="max-height:900px; min-height:200px; overflow: hidden;">
+        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
+      </div>
+  </div>
+<% } %>
+
+
+<header id="allheader" class="site-header" role="banner" 
+  <% if (is_current("about", false) && theme.about_big_image){ %> style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);" <% } %> >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -22,17 +38,6 @@
             </div>
           </nav>
 
-
       </div>
   </div>
 </header>
-
-<% if (is_current("about", false) && theme.about_big_image){ %>
-  <div style="background:#fff;width: 100%;">
-
-      <div style="max-height:600px; overflow: hidden;">
-        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
-      </div>
-
-  </div>
-<% } %>

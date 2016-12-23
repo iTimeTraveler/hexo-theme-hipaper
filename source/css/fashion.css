@@ -1158,6 +1158,17 @@ ul.widget-tab-nav {
 	border: none;
 	}
 
+.blur {	
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(22px); /* Chrome, Opera */
+       -moz-filter: blur(22px);
+        -ms-filter: blur(22px);    
+            filter: blur(22px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=22, MakeShadow=false); /* IE6~IE9 */
+	}
+
 /* SIDEBAR
 ----------------------------------------------- */
 .site-sidebar .widget_search .search-form {
