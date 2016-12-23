@@ -1158,15 +1158,22 @@ ul.widget-tab-nav {
 	border: none;
 	}
 
+.site-header-image {
+	max-height:800px; 
+	min-height:500px; 
+	overflow: hidden;
+	position: relative;
+}
+
 .blur {	
     filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
     
-    -webkit-filter: blur(22px); /* Chrome, Opera */
-       -moz-filter: blur(22px);
-        -ms-filter: blur(22px);    
-            filter: blur(22px);
+    -webkit-filter: blur(11px); /* Chrome, Opera */
+       -moz-filter: blur(11px);
+        -ms-filter: blur(11px);    
+            filter: blur(11px);
     
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=22, MakeShadow=false); /* IE6~IE9 */
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=1, MakeShadow=false); /* IE6~IE9 */
 	}
 
 /* SIDEBAR
@@ -1270,6 +1277,16 @@ ul.widget-tab-nav {
 	.site-header .site-branding {
 		float: none;
 		text-align: center;
+		}
+	.site-header-image > img {
+		height: 500px;
+		width: auto;
+		min-width: 100%;
+		display: block;
+	    transform: translate(-50%,-50%);
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
 		}
 	.content-area {
 		float: none;

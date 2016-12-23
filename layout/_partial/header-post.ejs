@@ -1,14 +1,10 @@
 <% if (is_current("about", false) && theme.about_big_image){ %>
-  <div style="background:#fff; width: 100%;">
-      <div style="max-height:900px; min-height:200px; overflow: hidden;">
-        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
-      </div>
+  <div class="site-header-image">
+    <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
   </div>
 
-  <div class="blur" style="background:#fff;width: 100%; position: absolute; top:0; height: 207px; overflow: hidden;">
-      <div style="max-height:900px; min-height:200px; overflow: hidden;">
-        <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
-      </div>
+  <div class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img width="100%" style="top: 96%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image %>">
   </div>
 <% } %>
 
