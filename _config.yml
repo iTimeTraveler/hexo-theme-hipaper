@@ -19,8 +19,8 @@ keywords: ""
 favicon: css/images/favicon.ico
 
 
-# AboutPage background
-about_big_image: css/images/pose.jpg
+# AboutPage background, support multiple images.
+about_big_image: [css/images/pose01.jpg, css/images/pose02.jpg]
 
 
 # Homepage thumbnail
