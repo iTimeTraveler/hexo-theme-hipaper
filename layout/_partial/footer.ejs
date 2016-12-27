@@ -20,6 +20,6 @@
     var wrapdiv = document.getElementById("wrap");
     var contentdiv = document.getElementById("content");
 
-    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
     contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
 </script>

@@ -13,9 +13,10 @@
           <section id="main" style="float:none;"><%- body %></section>
         <% } %>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+
     </div>
     <!-- <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %> -->
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     <%- partial('_partial/after-footer') %>
   </div>
 
