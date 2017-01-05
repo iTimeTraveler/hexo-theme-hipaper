@@ -19,6 +19,15 @@ keywords: ""
 favicon: css/images/favicon.ico
 
 
+# Put your avatar.jpg into `hexo-site/themes/hiero/source/` directory.
+avatar: 
+  enable: false
+  width: 124
+  height: 124
+  bottom: 10
+  url: css/images/mylogo.jpg
+
+
 # AboutPage background, support multiple images.
 about_big_image: [css/images/pose01.jpg, css/images/pose02.jpg]
 
