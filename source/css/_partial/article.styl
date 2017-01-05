@@ -443,9 +443,8 @@ $article-gallery-ctrl
 
 /*toc*/
 .toc-article
-  position: absolute
   border-left: rgba(88,88,88,0.1) 1px solid
-  padding 1em 1em 0 1em
+  padding 1em 0 0 1em
   margin-left: 1em
 
 .toc-title
@@ -456,7 +455,7 @@ $article-gallery-ctrl
     margin-right: .5em
 
 #toc
-  width: inherit
+  width: 100%
   line-height 1em
   font-size 0.9em
   float left
@@ -468,24 +467,31 @@ $article-gallery-ctrl
 
 .toc-fixed
   position: fixed;
+  width: inherit !important
   top: 30px;
   margin-top: 0;
-  max-height: 81%;
   overflow: hidden;
   z-index: 1;
+    
 
-.toc
+.nav
   padding 0
   margin 1em
   line-height 1.8em
   li
   list-style-type none
+    a:hover
+      background-color: transparent !important
+  .active > a
+    color: color-black
+    font-weight: bold
 
-.toc-link
+.nav-link
   font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
   color: color-link
+  padding 1px !important
   &:hover
     color: color-black
 
-.toc-child 
+.nav-child 
   margin-left 1.0em

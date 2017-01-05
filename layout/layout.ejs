@@ -1,5 +1,11 @@
 <%- partial('_partial/head') %>
-<body>
+
+<% if (is_post()){ %>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+<% } else {%>
+  <body>
+<% } %>
+
   <%- partial('_partial/header-post', null, {cache: !config.relative_link}) %>
 
   <div id="container">
