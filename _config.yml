@@ -15,11 +15,11 @@ rss: /atom.xml
 # Set default keywords (Use a comma to separate)
 keywords: ""
 
-# Put your favicon.ico into `hexo-site/themes/hiero/source/` directory.
+# Put your favicon.ico into `hexo-site/themes/hipaper/source/` directory.
 favicon: css/images/favicon.ico
 
 
-# Put your avatar.jpg into `hexo-site/themes/hiero/source/` directory.
+# Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
 avatar: 
   enable: false
   width: 124
