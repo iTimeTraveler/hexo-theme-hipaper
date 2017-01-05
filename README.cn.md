@@ -40,6 +40,27 @@
 ## 特性
 
 
+### 支持图片Logo
+
+就像下面这样：
+
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/logo-preview.jpg)
+
+只用在hipaper/_config.yml中设置 `avatar`字段的`eanble`为true，然后设置图片的`url`就好了。
+
+```yml
+# Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
+# url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
+avatar: 
+  enable: true
+  width: 124
+  height: 124
+  bottom: 10
+  url: https://hexo.io/logo.svg
+```
+
+
+
 ### 代码高亮
 
 Hipaper 使用 [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) 作为代码主题. 共有以下六种选项: `default`, `normal`, `night`, `night blue`, `night bright`, `night eighties`

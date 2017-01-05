@@ -42,6 +42,24 @@
 ## Features
 
 
+### Logo: Image or Text
+
+You can set a image as your logo instead of original text title. Like this:
+
+![](https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/master/source/preview/logo-preview.jpg)
+
+just enable `avatar` field in hipaper/_config.yml.
+
+```yml
+# Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
+# url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
+avatar: 
+  enable: true
+  width: 124
+  height: 124
+  bottom: 10
+  url: https://hexo.io/logo.svg
+```
 
 
 ### Code Highlight
