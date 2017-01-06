@@ -1,15 +1,26 @@
-<% if (is_current("about", false) && theme.about_big_image){ 
-  numImages = theme.about_big_image.length; 
-  random = Math.floor((Math.random() * numImages ));
-  %>
+<% if (is_current("about", false) && theme.about_big_image){ %>
   
   <div class="site-header-image">
-    <img width="100%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image[random] %>">
+    <img id="originBg" width="100%" alt="Hike News" src="">
   </div>
 
   <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img width="100%" style="top: 96%" alt="Hike News" src="<%- config.root %><%- theme.about_big_image[random] %>">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
   </div>
+
+  <script>
+        var imgUrls = "<%- theme.about_big_image %>".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        console.log(imgUrls[random]);
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='<%= config.root %>' + imgUrls[random];
+          document.getElementById("blurBg").src='<%= config.root %>' + imgUrls[random];
+        }
+    </script>
+
 <% } %>
 
 

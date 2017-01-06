@@ -30,7 +30,7 @@ avatar:
 
 
 # AboutPage background, support multiple images.
-about_big_image: [css/images/pose01.jpg, css/images/pose02.jpg]
+about_big_image: [css/images/pose02.jpg, http://t.cn/RMbvEza]
 
 
 # Homepage thumbnail
