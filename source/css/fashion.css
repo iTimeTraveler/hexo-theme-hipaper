@@ -1006,7 +1006,8 @@ ul.widget-tab-nav {
 	}
 .widget-tab-nav li {
 	float: left;
-	width: 48%;
+	width: auto;
+	max-width: 100%;
 	margin: 0;
 	text-align: center;
 	}
