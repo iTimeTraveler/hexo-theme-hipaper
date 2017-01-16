@@ -1,5 +1,8 @@
 # Hipaper
 
+[![Build Status](https://travis-ci.org/iTimeTraveler/hexo-theme-hipaper.svg?branch=master)](https://travis-ci.org/iTimeTraveler/hexo-theme-hipaper)		[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iTimeTraveler/hexo-theme-hipaper/blob/master/LICENSE)
+
+
 **A fashional newspaper, blog theme for Hexo**. [**☞ 点击预览**](https://itimetraveler.github.io/hexo-theme-hipaper/)
 
 
