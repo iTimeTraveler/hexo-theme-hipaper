@@ -1059,6 +1059,12 @@ ul.widget-tab-nav {
     top: 50%;
     left: 50%;
 	}
+.widget-entry-thumbnail img:hover {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: filter .3s cubic-bezier(.215,.61,.355,1);
+    transition: filter .3s cubic-bezier(.215,.61,.355,1);
+}
 .widget-entry-summary {
 	margin: 3px 0 0 60px;
 	}
