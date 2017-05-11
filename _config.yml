@@ -98,6 +98,7 @@ google_analytics:
 gauges_analytics:
 baidu_analytics:
 tencent_analytics:
+busuanzi_analytics: true
 twitter:
 google_plus:
 fb_admins:

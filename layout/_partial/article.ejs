@@ -8,7 +8,8 @@
     <% } %>
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      <%- partial('post/category') %>
+      <%- partial('post/category') %> 
+      <%- partial('post/busuanzi-analytics',{index: index}) %>
     </div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
