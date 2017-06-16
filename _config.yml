@@ -72,8 +72,8 @@ search:
 
 
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: iTimeTraveler
-disqus_shortname:
+duoshuo_shortname: 
+disqus_shortname: iTimeTraveler
 
 
 # Code Highlight theme
