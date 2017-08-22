@@ -30,7 +30,7 @@ avatar:
 
 
 # AboutPage background, support multiple images.
-about_big_image: [css/images/pose01.jpg, https://images.unsplash.com/photo-1464306208223-e0b4495a5553?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=]
+about_big_image: [css/images/pose01.jpg, https://source.unsplash.com/collection/954550/1920x1080, https://source.unsplash.com/collection/954550/1920x1081]
 
 
 # Homepage thumbnail
