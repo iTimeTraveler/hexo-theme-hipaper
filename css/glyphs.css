@@ -1,0 +1,73 @@
+@font-face {
+	font-family: 'athemes-glyphs';
+	src: url('fonts/athemes-glyphs.eot?48303859');
+	src: url('fonts/athemes-glyphs.eot?48303859#iefix') format('embedded-opentype'),
+		 url('fonts/athemes-glyphs.woff?48303859') format('woff'),
+		 url('fonts/athemes-glyphs.ttf?48303859') format('truetype'),
+		 url('fonts/athemes-glyphs.svg?48303859#athemes-glyphs') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'athemes-glyphs';
+		src: url('../fonts/athemes-glyphs.svg?48303859#athemes-glyphs') format('svg');
+		}
+	}
+*/
+ 
+ [class^="ico-"]:before, [class*=" ico-"]:before,
+ [class^="fa-"]:before, [class*=" fa-"]:before {
+	font-family: "athemes-glyphs";
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+ 
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+ 
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+		 
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+ 
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: 0em;
+ 
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+ 
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+	}
+ 
+.ico-youtube:before { content: '\e810'; } /* '' */
+.ico-chat:before { content: '\e813'; } /* '' */
+.ico-left-open:before { content: '\e812'; } /* '' */
+.ico-right-open:before { content: '\e811'; } /* '' */
+.ico-flickr:before { content: '\e802'; } /* '' */
+.ico-vimeo:before { content: '\e803'; } /* '' */
+.ico-twitter:before { content: '\e804'; } /* '' */
+.ico-facebook:before { content: '\e805'; } /* '' */
+.ico-gplus:before { content: '\e806'; } /* '' */
+.ico-pinterest:before { content: '\e807'; } /* '' */
+.ico-tumblr:before { content: '\e808'; } /* '' */
+.ico-linkedin:before { content: '\e809'; } /* '' */
+.ico-dribbble:before { content: '\e80a'; } /* '' */
+.ico-lastfm:before { content: '\e80b'; } /* '' */
+.ico-spotify:before { content: '\e80e'; } /* '' */
+.ico-instagram:before { content: '\e80c'; } /* '' */
+.ico-skype:before { content: '\e80d'; } /* '' */
+.ico-soundcloud:before { content: '\e80f'; } /* '' */

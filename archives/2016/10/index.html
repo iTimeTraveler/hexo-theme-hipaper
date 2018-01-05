@@ -2,6 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    <script src="../../../js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
   
   <title>archives: 2016/10 | iTimeTraveler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,11 +32,7 @@
   
     <link rel="alternate" href="/atom.xml" title="iTimeTraveler" type="application/atom+xml">
   
-
-  
-
-  <link rel="icon" href="/hexo-theme-hiker/css/images/mylogo.jpg">
-  <link rel="apple-touch-icon" href="/hexo-theme-hiker/css/images/mylogo.jpg">
+  <link rel="icon" href="/hexo-theme-hiero/css/images/favicon.ico">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -38,125 +44,116 @@
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
   <link rel="stylesheet" href="../../../css/style.css">
 
   <script src="../../../js/jquery-3.1.1.min.js"></script>
-  <script src="../../../js/bootstrap.js"></script>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/hexo-theme-hiker/css/bootstrap.css" >
-
+  <link rel="stylesheet" href="/hexo-theme-hiero/css/bootstrap.css" >
+  <link rel="stylesheet" href="/hexo-theme-hiero/css/hiero.css" >
+  <link rel="stylesheet" href="/hexo-theme-hiero/css/glyphs.css" >
   
-    <link rel="stylesheet" href="../../../css/dialog.css">
-  
-
-  
-
-  
-    <link rel="stylesheet" href="/hexo-theme-hiker/css/header-post.css" >
+    <link rel="stylesheet" href="/hexo-theme-hiero/css/vdonate.css" >
   
 
-  
-    <link rel="stylesheet" href="/hexo-theme-hiker/css/archive.css" >
-  
-  
-  
-    <link rel="stylesheet" href="/hexo-theme-hiker/css/vdonate.css" >
-  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../../css/my.css">
 
 </head>
 
+<script>
+var themeMenus = {};
+
+  themeMenus["../../../index.html"] = "Home"; 
+
+  themeMenus["../.."] = "Archives"; 
+
+  themeMenus["../../../categories"] = "Categories"; 
+
+  themeMenus["../../../tags"] = "Tags"; 
+
+  themeMenus["../../../about"] = "About"; 
+
+</script>
 
 
   <body>
 
 
-  
-  <div id="container">
-    <div id="wrap">
-      
-        <header>
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
 
-    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="navbar-inner">
+          <h1 class="site-title">
+            
+              <a href="/hexo-theme-hiero/" title="iTimeTraveler" rel="home"> iTimeTraveler </a>
+            
+          </h1>
+
           
-          <div class="container"> 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
+            <div class="site-description">Someone knock at the door.</div>
+          
             
-              <a class="brand" style="
-                 margin-top: 0px;"  
-                 >
-                  <img width="124px" height="124px" alt="Hike News" src="/hexo-theme-hiker/css/images/mylogo.jpg">
-              </a>
-            
-            
-            <div class="navbar-collapse collapse">
-              <ul class="hnav navbar-nav">
-                
-                  <li> <a class="main-nav-link" href="../../../index.html">Home</a> </li>
-                
-                  <li> <a class="main-nav-link" href="../..">Archives</a> </li>
-                
-                  <li> <a class="main-nav-link" href="../../../categories">Categories</a> </li>
-                
-                  <li> <a class="main-nav-link" href="../../../tags">Tags</a> </li>
-                
-                  <li> <a class="main-nav-link" href="../../../about">About</a> </li>
-                
-                  <li><div id="search-form-wrap">
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/hexo-theme-hiker/',
-        CONTENT_URL: '../../../content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="../../../js/insight.js"></script>
-
-</div></li>
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="../../../index.html">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="../..">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="../../../categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="../../../tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="../../../about">About</a> </li>
+                    
+              </ul>
             </div>
-          </div>
-                
-      </div>
-    </div>
+          </nav>
 
+
+      </div>
+  </div>
 </header>
 
 
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
 
-      
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/hexo-theme-hiero/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
             
       <div id="content" class="outer">
         
@@ -164,8 +161,9 @@
   <div class="archives-tags-wrap"><blockquote><span>There are 15 posts in total till now.</span></blockquote>
 
 
-<!-- 分页显示 -->
 
+
+	<!-- 分页显示 -->
 	
 	
 		
@@ -181,11 +179,10 @@
 		<article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      
-	<a href="../../../2016/10/24/Hiker主题预览/" class="archive-article-date">
-	  <time datetime="2016-10-24T03:07:20.000Z" itemprop="datePublished">2016-10-24</time>
-	</a>
 
+      <a href="../../../2016/10/24/Hiker主题预览/" class="archive-article-date">
+		  <time datetime="2016-10-24T03:07:20.000Z" itemprop="datePublished">Oct 24, 2016</time>
+	  </a>
       
   
     <h1 class="thumb" itemprop="name">
@@ -206,13 +203,55 @@
 
 
 
-
 </section>
           <aside id="sidebar">
   
+    <div class="widget-wrap" style="margin: 20px 0;">
+	<div id="search-form-wrap">
+
+    <form class="search-form">
+        <label style="width: 75%;">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" Search…" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-form-submit" value="Search">
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/hexo-theme-hiero/',
+        CONTENT_URL: '../../../content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="../../../js/insight.js"></script>
+
+</div>
+</div>
+  
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Connect</h3>
+    <h3 class="widget-title">Connect With Us</h3>
     <div class="widget widget_athemes_social_icons">
 
     	<ul class="clearfix widget-social-icons">   
@@ -272,6 +311,109 @@
 
   
     
+  <div class="widget_athemes_tabs">
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+      <li class="active"><a>Recent Posts</a></li>
+    </ul>
+    <div class="widget">
+      <ul>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="../../../2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" title=""><img width="50" height="50" src="gallery/01.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="../../../2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/">Being Outside in Fresh Air &amp; How Your Body Loves It</a></h6>
+              <span>November 20, 2016</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="../../../2016/11/18/Stephen-Hawking/" title=""><img width="50" height="50" src="gallery/confederate_newspaper.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="../../../2016/11/18/Stephen-Hawking/">Stephen Hawking launches Centre for the Future of Intelligence</a></h6>
+              <span>November 18, 2016</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="../../../2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/" title=""><img width="50" height="50" src="https://hillaryclintonspeeches.files.wordpress.com/2016/11/10clinton2-master768.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="../../../2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/">Hillary Clinton Calls for Unity in Concession Speech</a></h6>
+              <span>November 18, 2016</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="../../../2016/10/24/Hiker主题预览/" title=""><img width="50" height="50" src="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="../../../2016/10/24/Hiker主题预览/">Hiker主题预览</a></h6>
+              <span>October 24, 2016</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="../../../2016/08/14/【Machine Learning】机器学习：简明入门指南/" title=""><img width="50" height="50" src="http://img.blog.csdn.net/20160814170910665" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="../../../2016/08/14/【Machine Learning】机器学习：简明入门指南/">【Machine Learning】机器学习：简明入门指南</a></h6>
+              <span>August 14, 2016</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-thumbnail">
+                <a href="../../../2016/06/24/Java 8系列之重新认识HashMap/" title=""><img width="50" height="50" src="/gallery/HashMap-300x200.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
+            
+
+              <h6 style="margin: 0;"><a href="../../../2016/06/24/Java 8系列之重新认识HashMap/">Java 8系列之重新认识HashMap</a></h6>
+              <span>June 24, 2016</span>
+            </div>
+
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
@@ -311,58 +453,25 @@
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="../../../2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/">Being Outside in Fresh Air &amp; How Your Body Loves It</a>
-          </li>
-        
-          <li>
-            <a href="../../../2016/11/18/Stephen-Hawking/">Stephen Hawking launches Centre for the Future of Intelligence</a>
-          </li>
-        
-          <li>
-            <a href="../../../2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/">Hillary Clinton Calls for Unity in Concession Speech</a>
-          </li>
-        
-          <li>
-            <a href="../../../2016/10/24/Hiker主题预览/">Hiker主题预览</a>
-          </li>
-        
-          <li>
-            <a href="../../../2016/08/14/【Machine Learning】机器学习：简明入门指南/">【Machine Learning】机器学习：简明入门指南</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
 </aside>
         
       </div>
-      
-      <footer id="footer">
+      <footer id="footer" class="site-footer">
   
 
-  <div class="container">
-      	<div class="row">
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 iTimeTraveler All Rights Reserved.</p>
-	      
-	      
-    		<p class="busuanzi_uv">
-				UV : <span id="busuanzi_value_site_uv"></span> |  
-				PV : <span id="busuanzi_value_site_pv"></span>
-		    </p>
-  		   
-		</div>
-
-		
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 iTimeTraveler All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
   </div>
 </footer>
 
@@ -370,17 +479,13 @@
 <!-- min height -->
 
 <script>
-    var wrapdiv = document.getElementById("wrap");
     var contentdiv = document.getElementById("content");
-    var allheader = document.getElementById("allheader");
 
-    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
-    if (allheader != null) {
-      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
-    } else {
-      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
-    }
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
 </script>
+
+<!-- Custome JS -->
+<script src="../../../js/my.js"></script>
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -434,6 +539,8 @@
 
 
 <script src="../../../js/scripts.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+<script src="../../../js/main.js"></script>
 
 
 
@@ -441,11 +548,7 @@
 
 
 
-
-
-
-
-	<div style="display: none;">
+  <div style="display: none;">
     <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
   </div>
 
@@ -461,66 +564,7 @@
 
   </div>
 
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="myModalLabel">设置</h2>
-      </div>
-      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
-      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
-
-
-      <div class="modal-body">
-          <div style="margin:6px;">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
-              正文字号大小
-            </a>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-            您已调整页面字体大小
-          </div>
-        </div>
-      
-
-
-          <div style="margin:6px;">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
-              夜间护眼模式
-            </a>
-        </div>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="panel-body">
-            夜间模式已经开启，再次单击按钮即可关闭 
-          </div>
-        </div>
-
-        <div>
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        </div>
-         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-          <div class="panel-body">
-            iTimeTraveler
-          </div>
-          <div class="panel-body">
-            Copyright © 2018 Mr.Seven All Rights Reserved.
-          </div>
-        </div>
-      </div>
-
-
-      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
-      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
-      <div class="modal-footer">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div>
-    </div>
-  </div>
-</div>
-  
   <a id="rocket" href="#top" class=""></a>
-  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
-  
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>

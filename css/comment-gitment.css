@@ -1,0 +1,13 @@
+/*Gitment TAB 颜色调整*/
+.gitment-editor-tab{
+    transition: color 0.25s, background 0.25s, border-color 0.25s;
+    -moz-transition: color 0.25s, background 0.25s, border-color 0.25s;	/* Firefox 4 */
+    -webkit-transition: color 0.25s, background 0.25s, border-color 0.25s;	/* Safari 和 Chrome */
+    -o-transition: color 0.25s, background 0.25s, border-color 0.25s;
+}
+.gitment-editor-tab:hover{
+    color: white;
+    background: black;
+    border-color: black;
+}
+.gitment-editor-submit{background-color: #ff321e !important}
