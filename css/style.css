@@ -132,7 +132,7 @@ body {
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
-  color: #16171b;
+  color: #333;
 }
 #rocket {
   position: fixed;
@@ -391,7 +391,7 @@ body {
   font-weight: bold;
 }
 .article {
-  color: #555;
+  color: #333;
   margin: 0 0 40px 0;
 }
 @media screen and (max-width: 479px) {
@@ -414,7 +414,9 @@ body {
 }
 .article-meta {
   margin: 7px 0 20px;
-  color: #999;
+  color: #a6a6a6;
+  text-align: center;
+  font-family: Oswald, "Microsoft Yahei", Arial, Helvetica, sans-serif;
   font-size: 0.9em;
 }
 .article-meta:before,
@@ -425,13 +427,24 @@ body {
 .article-meta:after {
   clear: both;
 }
+.article-meta a {
+  color: #a6a6a6;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.article-meta span:before {
+  margin: 0 0 0 8px;
+  padding: 0 6px 0 0;
+  content: "/";
+  color: #d6d6d6;
+}
 .article-date {
   color: #999;
   text-align: center;
   font-weight: normal;
 }
 .article-date:hover {
-  color: #ff2828;
+  color: #1fa0ae;
 }
 .article-category {
   text-align: center;
@@ -445,7 +458,6 @@ body {
 .article-category-link {
   display: inline;
   margin: 0;
-  font-weight: normal;
 }
 .ico-folder:before {
   font-family: "FontAwesome";
@@ -453,15 +465,16 @@ body {
   color: #333;
 }
 .article-category-link:hover {
-  color: #ff2828;
+  color: #1fa0ae;
 }
 .article-header h1 {
   margin: 0 0 3px 0;
-  font-size: 20px;
+  font-size: 1.6em;
   line-height: 1.2;
+  font-weight: bold;
 }
 .article-header h1 a {
-  color: #404040;
+  color: #333;
   text-decoration: none;
 }
 .article-title {
@@ -475,7 +488,7 @@ body {
   transition: color 0.2s;
 }
 a.article-title:hover {
-  color: #ff2828;
+  color: #1fa0ae;
   text-decoration: none;
 }
 .article-entry {
@@ -517,7 +530,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 .article-entry a:hover {
-  color: #ff2828;
+  color: #1fa0ae;
   text-decoration: none;
 }
 .article-entry ul,
@@ -645,7 +658,7 @@ a.article-title:hover {
   text-align: center;
 }
 .article-more-link a {
-  color: #ff2828;
+  color: #1fa0ae;
   display: inline-block;
   font-size: 0.9em;
   line-height: 1em;
@@ -785,7 +798,7 @@ a.article-title:hover {
 .article-nav-caption {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #eef1f8;
+  color: #333;
   line-height: 1em;
   font-weight: bold;
 }
@@ -894,7 +907,7 @@ a.article-title:hover {
   background: color-google;
 }
 .article-gallery {
-  background: transparent;
+  background: #000;
   position: relative;
   margin-bottom: 40px;
 }
@@ -915,13 +928,12 @@ a.article-title:hover {
 }
 .article-gallery-img img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 .toc-article {
-  position: absolute;
   border-left: rgba(88,88,88,0.1) 1px solid;
-  padding: 1em 1em 0 1em;
+  padding: 1em 0 0 1em;
   margin-left: 1em;
 }
 .toc-title {
@@ -933,7 +945,7 @@ a.article-title:hover {
   margin-right: 0.5em;
 }
 #toc {
-  width: inherit;
+  width: 100%;
   line-height: 1em;
   font-size: 0.9em;
   float: left;
@@ -951,9 +963,9 @@ a.article-title:hover {
 }
 .toc-fixed {
   position: fixed;
+  width: inherit !important;
   top: 30px;
   margin-top: 0;
-  max-height: 81%;
   overflow: hidden;
   z-index: 1;
 }
@@ -967,15 +979,15 @@ a.article-title:hover {
   background-color: transparent !important;
 }
 .nav .active > a {
-  color: #ff2828;
+  color: #333;
 }
 .nav-link {
-  font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
   color: color-link;
   padding: 1px !important;
 }
 .nav-link:hover {
-  color: #ff2828;
+  color: #333;
 }
 .nav-child {
   margin-left: 1em;
@@ -1008,7 +1020,7 @@ a.article-title:hover {
   font-size: 1.5em;
 }
 .archive-year {
-  color: #16171b;
+  color: #333;
 }
 .archive-year:before {
   font-family: "FontAwesome";
@@ -1020,21 +1032,21 @@ a.article-title:hover {
   margin: 1em 0 0 0;
   font-size: 1.2em;
   font-weight: bold;
-  color: #16171b;
+  color: #333;
   text-align: center;
-  border-left: 0px solid #ff2828;
+  border-left: 0px solid #1fa0ae;
   background: rgba(208,211,248,0.15);
 }
 .archives-tags-wrap blockquote a {
-  color: #16171b;
+  color: #333;
   margin: 0.2em;
 }
 .archives-tags-wrap blockquote a:hover {
-  color: #ff2828;
+  color: #1fa0ae;
 }
 .archive-tag {
   text-transform: none;
-  color: #16171b;
+  color: #333;
 }
 .archive-tag:before {
   font-family: "FontAwesome";
@@ -1049,29 +1061,26 @@ a.article-title:hover {
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.7em;
-  color: #ff2828;
+  color: #1fa0ae;
   text-align: left;
-  border-left: 0px solid #ff2828;
+  border-left: 0px solid #1fa0ae;
   background: rgba(208,211,248,0.15);
 }
 .archives-category-wrap blockquote a {
-  color: #16171b;
+  color: #333;
   margin: 0.2em;
 }
 .archives-category-wrap blockquote a:hover {
-  color: #ff2828;
+  color: #1fa0ae;
 }
 .archives-category-wrap blockquote a:before {
   font-family: "FontAwesome";
   content: "\f0da";
   margin-right: 0.5em;
 }
-.archives-category-wrap blockquote .category-list-child {
-  padding-left: 2em;
-}
 .archive-category {
   text-transform: none;
-  color: #16171b;
+  color: #333;
 }
 .archive-category:before {
   font-family: "FontAwesome";
@@ -1108,7 +1117,7 @@ a.article-title:hover {
   margin-bottom: 0px;
 }
 .archive-article-title {
-  font-size: 1.2em;
+  font-size: 1.05em;
   text-decoration: none;
   color: #333;
   -webkit-transition: color 0.2s;
@@ -1116,11 +1125,11 @@ a.article-title:hover {
   -ms-transition: color 0.2s;
   transition: color 0.2s;
   line-height: 1.6em;
-  border-left: 1px solid #16171b;
+  border-left: 1px solid #333;
   padding-left: 15px;
 }
 .archive-article-title:hover {
-  color: #ff2828;
+  color: #1fa0ae;
 }
 .archive-article-footer {
   margin-top: 1em;
@@ -1134,12 +1143,17 @@ a.article-title:hover {
   margin-right: 15px;
   display: block;
   font-size: 1.1em;
-  font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
 }
 .archive-article-date:hover {
-  color: #ff2828;
+  color: #1fa0ae;
 }
 #page-nav {
+  font-family: Oswald, "Microsoft Yahei", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin: 50px auto;
   background: #fff;
   border: 1px solid #eef1f8;
@@ -1165,12 +1179,12 @@ a.article-title:hover {
   text-decoration: none;
 }
 #page-nav a:hover {
-  background: #ff2828;
+  background: #1fa0ae;
   color: #fff;
 }
 #page-nav .prev {
   color: #fff;
-  background: #16171b;
+  background: #333;
   float: left;
 }
 #page-nav .prev:before {
@@ -1180,7 +1194,7 @@ a.article-title:hover {
 }
 #page-nav .next {
   color: #fff;
-  background: #16171b;
+  background: #333;
   float: right;
 }
 #page-nav .next:after {
@@ -1213,8 +1227,7 @@ a.article-title:hover {
   border-width: 1px 0;
   overflow: auto;
   color: $highlight-foreground;
-  line-height: 1em;
-  font-size: 0.9em;
+  line-height: 22.400000000000002px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -1512,6 +1525,7 @@ pre .xml .cdata {
 }
 .ins-search-input {
   width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   font-size: 16px;
@@ -1540,7 +1554,7 @@ pre .xml .cdata {
   display: inline-block;
 }
 .ins-close:hover {
-  color: #16171b;
+  color: #333;
 }
 .ins-search-container {
   left: 50%;
@@ -1552,7 +1566,7 @@ pre .xml .cdata {
   box-sizing: border-box;
   width: 540px;
   margin-left: -270px;
-  border-top: 2px solid #ff2828;
+  border-top: 2px solid #1fa0ae;
 }
 @media screen and (max-width: 559px), screen and (max-height: 479px) {
   .ins-search-container {
@@ -1616,7 +1630,7 @@ pre .xml .cdata {
 .ins-section .ins-search-item:hover,
 .ins-section .ins-search-item.active {
   color: #fff;
-  background: #16171b;
+  background: #333;
 }
 .ins-section .ins-search-item:hover .ins-slug,
 .ins-section .ins-search-item.active .ins-slug,
@@ -1650,16 +1664,15 @@ pre .xml .cdata {
 .widget {
   color: #777;
   background: transparent;
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: #d6d6d6;
+  padding: 15px 0 0;
+  border-top: 1px solid #333;
 }
 .widget a {
   color: #555;
   text-decoration: none;
 }
 .widget a:hover {
-  color: #ff2828;
+  color: #1fa0ae;
   text-decoration: none;
 }
 .widget ul ul,
@@ -1678,24 +1691,27 @@ pre .xml .cdata {
   border-width: 0;
 }
 .widget_athemes_tabs .widget ul {
-  background: #f6f6f6;
-  border: 1px solid #e6e6e6;
+  background: transparent;
+  border-bottom: 1px solid #333;
 }
 .widget_athemes_tabs .widget ul li {
-  margin: 0;
-  padding: 10px;
+  margin: 0 0 15px;
 }
 .widget_athemes_tabs .widget ul li a {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
   line-height: 1.2;
   color: #222;
-  font-weight: 700;
-  font-family: "Yanone Kaffeesatz", "Microsoft YaHei Light", Arial, Helvetica, sans-serif;
+  font-family: Oswald, "Microsoft Yahei", Arial, Helvetica, sans-serif;
 }
 .widget_athemes_tabs .widget ul li a:hover {
-  color: #ff2828;
+  color: #1fa0ae;
+}
+.widget-social-icons li {
+  float: left;
+  margin: 5px 10px 5px 0;
+  text-align: center;
 }
 .widget {
   line-height: 1.6em;

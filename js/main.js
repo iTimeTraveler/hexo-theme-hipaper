@@ -1,38 +1,19 @@
-(function(){
 
-	// Highlight current nav item
-	var hasCurrent = false;
-
-	//把相对路径解析成绝对路径
-	function absolute(href) {
-	    var link = document.createElement("a");
-	    link.href = href;
-	    return (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
-	}
-
-	//移出所有的菜单的选中样式
-	$('#main-nav > li').each(function(){
+// Highlight current nav item
+var hasCurrent = false;
+$('#main-nav > li').each(function () {
+	var url = window.location.href;
+	if(url.toUpperCase().indexOf($(this).text().trim().toUpperCase()) != -1){
+		$(this).addClass('current-menu-item current_page_item');
+		hasCurrent = true;
+	} else {
 		$(this).removeClass('current-menu-item current_page_item');
-	});
-	var links = $('#main-nav > li > a');
-	var urls = window.location.href;
-	//为什么要从后面往前面遍历？因为首页极有可能是https://xxxxx/,
-	//这样的话肯定能够匹配所有的项
-	for (var i = links.length; i >= 0; i--) {
-		if(urls.indexOf(absolute(links[i])) != -1){
-			$(links[i]).parent().addClass('current-menu-item current_page_item');
-			//为什么还要设置hasCurrent？因为不排除首页是
-			//https://xxxx/index.html格式的
-			hasCurrent = true;
-			break;
-		}		
 	}
+});
 
-
-	if (!hasCurrent) {
-		$('#main-nav > li:first').addClass('current-menu-item current_page_item');
-	}
-})();
+if (!hasCurrent) {
+	$('#main-nav > li:first').addClass('current-menu-item current_page_item');
+}
 
 
 

@@ -2,18 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-
-  <!-- PACE Progress Bar START -->
   
-    <script src="js/pace.min.js"></script>
-    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
-  
-  
-
-  <!-- PACE Progress Bar START -->
-
-  
-  <title>iTimeTraveler</title>
+  <title>Page 1 | iTimeTraveler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -32,7 +22,7 @@
   
     <link rel="alternate" href="/atom.xml" title="iTimeTraveler" type="application/atom+xml">
   
-  <link rel="icon" href="/hexo-theme-hiero/css/images/favicon.ico">
+  <link rel="icon" href="/hexo-theme-hipaper/css/images/favicon.ico">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -46,52 +36,38 @@
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
     
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/jquery-3.1.1.min.js"></script>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/hexo-theme-hiero/css/bootstrap.css" >
-  <link rel="stylesheet" href="/hexo-theme-hiero/css/hiero.css" >
-  <link rel="stylesheet" href="/hexo-theme-hiero/css/glyphs.css" >
-  
-    <link rel="stylesheet" href="/hexo-theme-hiero/css/vdonate.css" >
-  
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/my.css">
+  <link rel="stylesheet" href="/hexo-theme-hipaper/css/bootstrap.css" >
+  <link rel="stylesheet" href="/hexo-theme-hipaper/css/fashion.css" >
+  <link rel="stylesheet" href="/hexo-theme-hipaper/css/glyphs.css" >
 
 </head>
 
-<script>
-var themeMenus = {};
-
-  themeMenus["index.html"] = "Home"; 
-
-  themeMenus["archives"] = "Archives"; 
-
-  themeMenus["categories"] = "Categories"; 
-
-  themeMenus["tags"] = "Tags"; 
-
-  themeMenus["about"] = "About"; 
-
-</script>
 
 
   <body>
 
 
-  <header id="allheader" class="site-header" role="banner">
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
   <div class="clearfix container">
       <div class="site-branding">
 
           <h1 class="site-title">
             
-              <a href="/hexo-theme-hiero/" title="iTimeTraveler" rel="home"> iTimeTraveler </a>
+              <a href="/hexo-theme-hipaper/" title="iTimeTraveler" rel="home"> iTimeTraveler </a>
             
           </h1>
-
+          
           
             <div class="site-description">Someone knock at the door.</div>
           
@@ -99,9 +75,9 @@ var themeMenus = {};
           <nav id="main-navigation" class="main-navigation" role="navigation">
             <a class="nav-open">Menu</a>
             <a class="nav-close">Close</a>
-            <div class="clearfix sf-menu">
 
-              <ul id="main-nav" class="nmenu sf-js-enabled">
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="index.html">Home</a> </li>
                     
@@ -117,39 +93,9 @@ var themeMenus = {};
             </div>
           </nav>
 
-
       </div>
   </div>
 </header>
-
-
-  <div id="originBgDiv" style="background: #fff; width: 100%;">
-
-      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
-        <img id="originBg" width="100%" alt="" src="">
-      </div>
-
-  </div>
-
-  <script>
-  function setAboutIMG(){
-      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
-      var random = Math.floor((Math.random() * imgUrls.length ));
-      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-        document.getElementById("originBg").src=imgUrls[random];
-      } else {
-        document.getElementById("originBg").src='/hexo-theme-hiero/' + imgUrls[random];
-      }
-  }
-  bgDiv=document.getElementById("originBgDiv");
-  if(location.pathname.match('about')){
-    setAboutIMG();
-    bgDiv.style.display='block';
-  }else{
-    bgDiv.style.display='none';
-  }
-  </script>
-
 
 
   <div id="container">
@@ -175,21 +121,26 @@ var themeMenus = {};
     
     <div class="article-meta">
       
-	Posted on <a href="2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" class="article-date">
+	<a href="2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" class="article-date">
 	  <time datetime="2016-11-20T13:55:38.000Z" itemprop="datePublished">November 20, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/lifeStyle/">lifeStyle</a>, <a class="article-category-link" href="categories/lifeStyle/markup/">markup</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/"><img width="250" height="175" src="gallery/01.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/11/20/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/"><img src="gallery/01.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
           
-Amor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e...
+Amor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
         
           <p class="article-more-link">
@@ -208,9 +159,8 @@ Amor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/sticky/">sticky</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/template/">template</a></li></ul>
 
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -234,22 +184,31 @@ Amor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
     
     <div class="article-meta">
       
-	Posted on <a href="2016/11/18/Stephen-Hawking/" class="article-date">
+	<a href="2016/11/18/Stephen-Hawking/" class="article-date">
 	  <time datetime="2016-11-18T02:55:37.000Z" itemprop="datePublished">November 18, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/AI/">AI</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/11/18/Stephen-Hawking/"><img width="250" height="175" src="gallery/confederate_newspaper.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/11/18/Stephen-Hawking/"><img src="gallery/confederate_newspaper.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
           Alongside the benefits, AI will also bring dangers, like powerful autonomous weapons, or new ways for the few to oppress the many.
 Stephen Hawkingwww.cam.ac.uk
-Artificial intelligence has the power...
+Artificial intelligence has the power to eradicate poverty and disease or hasten the end of human civilisation as we know it – according to a speech delivered by Professor Stephen Hawking this evening.
+Alongside the benefits, AI will also bring dangers, like powerful autonomous weapons, or new ways for the few to oppress the many.
+
+“Success in creating AI could be the biggest event in the history of our civilisation,” said Professor Hawking. “But it could also be the last – unless we learn how to avoid the risks. Alongside the benefits, AI will also bring dangers like powerful autonomous weapons or new ways for the few to oppress the many.
+“We cannot predict what we might achieve when our own minds are amplified by AI. Perhaps with the tools of this new technological revolution, we will be able to undo some of the damage done to the natural world by the last one – industrialisation.”
+The Centre for the Future of Intelligence will initially focus on seven distinct projects in the first three-year phase of its work, reaching out to brilliant researchers and connecting them and their ideas to the challenges of making the best of AI. Among the initial research topics are: ‘Science, value and the future of intelligence’; ‘Policy and responsible innovation’; ‘Autonomous weapons – prospects for regulation’ and ‘Trust and transparency’.
 
         
           <p class="article-more-link">
@@ -265,9 +224,8 @@ Artificial intelligence has the power...
 
       
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -291,20 +249,24 @@ Artificial intelligence has the power...
     
     <div class="article-meta">
       
-	Posted on <a href="2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/" class="article-date">
+	<a href="2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/" class="article-date">
 	  <time datetime="2016-11-18T01:55:37.000Z" itemprop="datePublished">November 18, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/LifeStyle/">LifeStyle</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/"><img width="250" height="175" src="https://hillaryclintonspeeches.files.wordpress.com/2016/11/10clinton2-master768.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/11/18/Hillary Clinton Calls for Unity in Concession Speech/"><img src="https://hillaryclintonspeeches.files.wordpress.com/2016/11/10clinton2-master768.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
-          Hillary Clinton delivered her concession speech this morning in New York City. In the speech, Clinton thanked Tim Kaine and Anne Holton, her family, and the Obamas for all their support on the camp...
+          Hillary Clinton delivered her concession speech this morning in New York City. In the speech, Clinton thanked Tim Kaine and Anne Holton, her family, and the Obamas for all their support on the campaign trail. She also thanked her staff, campaign volunteers, and everyone who has supported the campaign by voting or donating. Clinton asked that everyone not be discouraged by the results saying that she hopes Donald Trump will be “a successful president for all Americans.” She urged everyone to keep fighting for what they believe in saying, “This loss hurts, but please never stop believing that fighting for what’s right is worth it. It is, it is worth it. And so we need — we need you to keep up these fights now and for the rest of your lives. And to all the women, and especially the young women, who put their faith in this campaign and in me: I want you to know that nothing has made me prouder than to be your champion.” A video and transcript of Clinton’s speech is below.
 
         
           <p class="article-more-link">
@@ -320,9 +282,8 @@ Artificial intelligence has the power...
 
       
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -346,32 +307,24 @@ Artificial intelligence has the power...
     
     <div class="article-meta">
       
-	Posted on <a href="2016/10/24/Hiker主题预览/" class="article-date">
+	<a href="2016/10/24/Hiker主题预览/" class="article-date">
 	  <time datetime="2016-10-24T03:07:20.000Z" itemprop="datePublished">October 24, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/Hexo/">Hexo</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/10/24/Hiker主题预览/"><img width="250" height="175" src="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/10/24/Hiker主题预览/"><img src="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
           Hiker主题预览Hiker is an attractive theme for Hexo. called “Hiker”, short for “HikerNews”. 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -392,9 +345,8 @@ Artificial intelligence has the power...
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/Hexo/">Hexo</a></li></ul>
 
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -418,24 +370,29 @@ Artificial intelligence has the power...
     
     <div class="article-meta">
       
-	Posted on <a href="2016/08/14/【Machine Learning】机器学习：简明入门指南/" class="article-date">
+	<a href="2016/08/14/【Machine Learning】机器学习：简明入门指南/" class="article-date">
 	  <time datetime="2016-08-14T09:32:55.000Z" itemprop="datePublished">August 14, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/Machine-Learning/">Machine Learning</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/08/14/【Machine Learning】机器学习：简明入门指南/"><img width="250" height="175" src="http://img.blog.csdn.net/20160814170910665" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/08/14/【Machine Learning】机器学习：简明入门指南/"><img src="http://img.blog.csdn.net/20160814170910665" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
           
 本文是一篇转载自伯乐在线的译文，英文原文是这里：Machine Learning is Fun! — by Adam Geitgey
 
 在听到人们谈论机器学习的时候，你是不是对它的涵义只有几个模糊的认识呢？你是不是已经厌倦了在和同事交谈时只能一直点头？让我们改变一下吧！
-本指南的读者对象是所有对机器学习有求知欲但却不知道如何开头的朋友。我猜很多人已经读过了“机器学习” ——维基百科词条，倍...
+本指南的读者对象是所有对机器学习有求知欲但却不知道如何开头的朋友。我猜很多人已经读过了“机器学习” ——维基百科词条，倍感挫折，以为没人能给出一个高层次的解释。本文就是你们想要的东西。
+本文目标在于平易近人，这意味着文中有大量的概括。但是谁在乎这些呢？只要能让读者对于ML更感兴趣，任务也就完成了。
 
         
           <p class="article-more-link">
@@ -454,9 +411,8 @@ Artificial intelligence has the power...
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/Machine-Learning/">Machine Learning</a></li></ul>
 
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -480,23 +436,29 @@ Artificial intelligence has the power...
     
     <div class="article-meta">
       
-	Posted on <a href="2016/06/24/Java 8系列之重新认识HashMap/" class="article-date">
+	<a href="2016/06/24/Java 8系列之重新认识HashMap/" class="article-date">
 	  <time datetime="2016-06-24T03:58:55.000Z" itemprop="datePublished">June 24, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/Java/">Java</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/06/24/Java 8系列之重新认识HashMap/"><img width="250" height="175" src="/gallery/HashMap-300x200.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/06/24/Java 8系列之重新认识HashMap/"><img src="/gallery/HashMap-300x200.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
           
 本文来自美团点评技术团队： Java 8系列之重新认识HashMap
 
-摘要HashMap是Java程序员使用频率最高的用于映射(键值对)处理的数据类型。随着JDK（Java Developmet Kit）版本的更新，JDK1.8对HashMap底层的实现进行了优化，例如引入红黑树的数据结构和扩容的优化等。本文结合JDK1.7和JDK1.8的区别，深入探讨HashMap的结构实现和功能原理...
+摘要HashMap是Java程序员使用频率最高的用于映射(键值对)处理的数据类型。随着JDK（Java Developmet Kit）版本的更新，JDK1.8对HashMap底层的实现进行了优化，例如引入红黑树的数据结构和扩容的优化等。本文结合JDK1.7和JDK1.8的区别，深入探讨HashMap的结构实现和功能原理。
+简介Java为数据结构中的映射定义了一个接口java.util.Map，此接口主要有四个常用的实现类，分别是HashMap、Hashtable、LinkedHashMap和TreeMap，类继承关系如下图所示：
+
 
         
           <p class="article-more-link">
@@ -515,9 +477,8 @@ Artificial intelligence has the power...
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/Java/">Java</a></li></ul>
 
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -541,20 +502,21 @@ Artificial intelligence has the power...
     
     <div class="article-meta">
       
-	Posted on <a href="2016/01/26/Gallery-Example/" class="article-date">
+	<a href="2016/01/26/Gallery-Example/" class="article-date">
 	  <time datetime="2016-01-26T13:55:37.000Z" itemprop="datePublished">January 26, 2016</time>
 	</a>
 
+       
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
           <div class="entry-thumbnail">
-            <a href="2016/01/26/Gallery-Example/"><img width="250" height="175" src="https://www.hdwallpapers.net/previews/starry-night-over-corsica-986.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="2016/01/26/Gallery-Example/"><img src="https://www.hdwallpapers.net/previews/starry-night-over-corsica-986.jpg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
-          To add a photo gallery placeholder to your post, just add the following lines to your front-matter:1234photos:- https://www.hdwallpapers.net/previews/starry-night-over-corsica-986.jpg- https://www....
+          To add a photo gallery placeholder to your post, just add the following lines to your front-matter:1234photos:- https://www.hdwallpapers.net/previews/starry-night-over-corsica-986.jpg- https://www.hdwallpapers.net/previews/water-plant-close-up-979.jpg- ...
 
         
           <p class="article-more-link">
@@ -567,9 +529,8 @@ Artificial intelligence has the power...
       
       
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -593,10 +554,14 @@ Artificial intelligence has the power...
     
     <div class="article-meta">
       
-	Posted on <a href="2015/12/11/Take-a-Deep-Breath-and-Just-Be/" class="article-date">
+	<a href="2015/12/11/Take-a-Deep-Breath-and-Just-Be/" class="article-date">
 	  <time datetime="2015-12-11T13:55:37.000Z" itemprop="datePublished">December 11, 2015</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="categories/LifeStyle/">LifeStyle</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
@@ -604,10 +569,9 @@ Artificial intelligence has the power...
         
 
           
-            <div class="entry-summary" style="margin-left:0;">
-            This is hiker, a free responsive, high resolution and pretty flexible theme for you to use to write about things you love. Make sure to check all the examples out! To download this theme or to check the full feature list, just go here. Feel free to leave a comment there if you digg it!
-Sed ut perspiciatis unde omnis iste natus error sit voluptat...
-          
+          <div class="entry-summary">
+          This is hiker, a free responsive, high resolution and pretty flexible theme for you to use to write about things you love. Make sure to check all the examples out! To download this theme or to check the full feature list, just go here. Feel free to leave a comment there if you digg it!
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
         
           <p class="article-more-link">
@@ -623,9 +587,8 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
 
       
       
-            
-      
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
 </article>
@@ -643,13 +606,13 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
 </section>
           <aside id="sidebar">
   
-    <div class="widget-wrap" style="margin: 20px 0;">
+    <div style="margin: 20px 0;">
 	<div id="search-form-wrap">
 
     <form class="search-form">
-        <label style="width: 75%;">
+        <label style="width: 72%;">
             <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" Search…" value="" name="s" title="Search for:">
+            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" Search…" value="" name="s" title="Search for:">
         </label>
         <input type="submit" class="search-form-submit" value="Search">
     </form>
@@ -675,7 +638,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
-        ROOT_URL: '/hexo-theme-hiero/',
+        ROOT_URL: '/hexo-theme-hipaper/',
         CONTENT_URL: 'content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
@@ -693,41 +656,23 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
 
     	<ul class="clearfix widget-social-icons">   
     	
-          
-     			  <li><a href="https://github.com/iTimeTraveler" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-          
+   			<li><a href="https://github.com/iTimeTraveler" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+
    		
-          
-     			  <li><a href="http://www.yoursite.com" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
-          
+   			<li><a href="null" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
+
    		
-          
-     			  <li><a href="null" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
-          
+   			<li><a href="null" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
+
    		
-          
-     			  <li><a href="null" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-          
+   			<li><a href="null" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
+
    		
-          
-     			  <li><a href="null" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
-          
+   			<li><a href="null" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
+
    		
-          
-     			  <li><a href="null" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="null" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="null" title="Flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-            <li><a href="mailto:null?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
-          
+   			<li><a href="null" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+
    		
    		</ul>
 
@@ -893,36 +838,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
 </aside>
         
       </div>
-      <footer id="footer" class="site-footer">
-  
 
-  <div class="clearfix container">
-      <div class="site-info">
-	      &copy; 2018 iTimeTraveler All Rights Reserved.
-          
-            <span id="busuanzi_container_site_uv">
-              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
-              本站总访问量<span id="busuanzi_value_site_pv"></span>次
-            </span>
-          
-      </div>
-      <div class="site-credit">
-        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
-      </div>
-  </div>
-</footer>
-
-
-<!-- min height -->
-
-<script>
-    var contentdiv = document.getElementById("content");
-
-    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
-</script>
-
-<!-- Custome JS -->
-<script src="js/my.js"></script>
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -937,7 +853,44 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
     <a href="about" class="mobile-nav-link">About</a>
   
 </nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 iTimeTraveler All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
     
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
 
 <!-- mathjax config similar to math.stackexchange -->
 
@@ -975,7 +928,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptat...
   <script src="fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="js/scripts.js"></script>
+<script src="js/script.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
 

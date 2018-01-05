@@ -2,18 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-
-  <!-- PACE Progress Bar START -->
   
-    <script src="../../../../js/pace.min.js"></script>
-    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
-  
-  
-
-  <!-- PACE Progress Bar START -->
-
-  
-  <title>java 8系列之重新认识hashmap | iTimeTraveler</title>
+  <title>Java 8系列之重新认识HashMap | iTimeTraveler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="HashMap" />
@@ -38,7 +28,7 @@
   
     <link rel="alternate" href="/atom.xml" title="iTimeTraveler" type="application/atom+xml">
   
-  <link rel="icon" href="/hexo-theme-hiero/css/images/favicon.ico">
+  <link rel="icon" href="/hexo-theme-hipaper/css/images/favicon.ico">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -52,52 +42,38 @@
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
     
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
   <link rel="stylesheet" href="../../../../css/style.css">
 
   <script src="../../../../js/jquery-3.1.1.min.js"></script>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/hexo-theme-hiero/css/bootstrap.css" >
-  <link rel="stylesheet" href="/hexo-theme-hiero/css/hiero.css" >
-  <link rel="stylesheet" href="/hexo-theme-hiero/css/glyphs.css" >
-  
-    <link rel="stylesheet" href="/hexo-theme-hiero/css/vdonate.css" >
-  
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../../../../css/my.css">
+  <link rel="stylesheet" href="/hexo-theme-hipaper/css/bootstrap.css" >
+  <link rel="stylesheet" href="/hexo-theme-hipaper/css/fashion.css" >
+  <link rel="stylesheet" href="/hexo-theme-hipaper/css/glyphs.css" >
 
 </head>
 
-<script>
-var themeMenus = {};
-
-  themeMenus["../../../../index.html"] = "Home"; 
-
-  themeMenus["../../../../archives"] = "Archives"; 
-
-  themeMenus["../../../../categories"] = "Categories"; 
-
-  themeMenus["../../../../tags"] = "Tags"; 
-
-  themeMenus["../../../../about"] = "About"; 
-
-</script>
 
 
   <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
-  <header id="allheader" class="site-header" role="banner">
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
   <div class="clearfix container">
       <div class="site-branding">
 
           <h1 class="site-title">
             
-              <a href="/hexo-theme-hiero/" title="iTimeTraveler" rel="home"> iTimeTraveler </a>
+              <a href="/hexo-theme-hipaper/" title="iTimeTraveler" rel="home"> iTimeTraveler </a>
             
           </h1>
-
+          
           
             <div class="site-description">Someone knock at the door.</div>
           
@@ -105,9 +81,9 @@ var themeMenus = {};
           <nav id="main-navigation" class="main-navigation" role="navigation">
             <a class="nav-open">Menu</a>
             <a class="nav-close">Close</a>
-            <div class="clearfix sf-menu">
 
-              <ul id="main-nav" class="nmenu sf-js-enabled">
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="../../../../index.html">Home</a> </li>
                     
@@ -123,39 +99,9 @@ var themeMenus = {};
             </div>
           </nav>
 
-
       </div>
   </div>
 </header>
-
-
-  <div id="originBgDiv" style="background: #fff; width: 100%;">
-
-      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
-        <img id="originBg" width="100%" alt="" src="">
-      </div>
-
-  </div>
-
-  <script>
-  function setAboutIMG(){
-      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
-      var random = Math.floor((Math.random() * imgUrls.length ));
-      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-        document.getElementById("originBg").src=imgUrls[random];
-      } else {
-        document.getElementById("originBg").src='/hexo-theme-hiero/' + imgUrls[random];
-      }
-  }
-  bgDiv=document.getElementById("originBgDiv");
-  if(location.pathname.match('about')){
-    setAboutIMG();
-    bgDiv.style.display='block';
-  }else{
-    bgDiv.style.display='none';
-  }
-  </script>
-
 
 
   <div id="container">
@@ -169,7 +115,7 @@ var themeMenus = {};
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="../../../../gallery/HashMap-300x200.png" rel="gallery_cjc1ha6x7000ie4myiqfodvjk">
+      <a class="article-gallery-img fancybox" href="../../../../gallery/HashMap-300x200.png" rel="gallery_cjc1hdroo000gzkmygbpqi4sb">
         <img src="../../../../gallery/HashMap-300x200.png" itemprop="image">
       </a>
     
@@ -189,10 +135,14 @@ var themeMenus = {};
     
     <div class="article-meta">
       
-	Posted on <a href="" class="article-date">
+	<a href="" class="article-date">
 	  <time datetime="2016-06-24T03:58:55.000Z" itemprop="datePublished">June 24, 2016</time>
 	</a>
 
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="../../../../categories/Java/">Java</a>
+ 
       
 	<span id="busuanzi_container_page_pv">
 	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
@@ -324,21 +274,6 @@ var themeMenus = {};
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Java/">Java</a></li></ul>
 
       
-        <div id="donation_div"></div>
-
-<script src="../../../../js/vdonate.js"></script>
-<script>
-var a = new Donate({
-  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
-  btnText: 'Donate', // 可选参数，打赏按钮文字
-  el: document.getElementById('donation_div'),
-  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
-  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
-});
-</script>
-      
-            
-      
         
 	<div id="comment">
 		<!-- 来必力City版安装代码 -->
@@ -362,8 +297,10 @@ var a = new Donate({
 	</div>
 
 
+
       
     </footer>
+    <hr class="entry-footer-hr">
   </div>
   
     
@@ -402,36 +339,7 @@ var a = new Donate({
 </section>
         
       </div>
-      <footer id="footer" class="site-footer">
-  
 
-  <div class="clearfix container">
-      <div class="site-info">
-	      &copy; 2018 iTimeTraveler All Rights Reserved.
-          
-            <span id="busuanzi_container_site_uv">
-              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
-              本站总访问量<span id="busuanzi_value_site_pv"></span>次
-            </span>
-          
-      </div>
-      <div class="site-credit">
-        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
-      </div>
-  </div>
-</footer>
-
-
-<!-- min height -->
-
-<script>
-    var contentdiv = document.getElementById("content");
-
-    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
-</script>
-
-<!-- Custome JS -->
-<script src="../../../../js/my.js"></script>
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -446,7 +354,44 @@ var a = new Donate({
     <a href="../../../../about" class="mobile-nav-link">About</a>
   
 </nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 iTimeTraveler All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
     
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
 
 <!-- mathjax config similar to math.stackexchange -->
 
@@ -484,7 +429,7 @@ var a = new Donate({
   <script src="../../../../fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="../../../../js/scripts.js"></script>
+<script src="../../../../js/script.js"></script>
 <script src="../../../../js/bootstrap.js"></script>
 <script src="../../../../js/main.js"></script>
 
