@@ -49,7 +49,7 @@
             <div class="clearfix sf-menu">
               <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
                     <% for (var i in theme.menu){ %>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="<%- theme.menu[i] %>"> <a class="" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
                     <% } %>
               </ul>
             </div>

@@ -1,9 +1,14 @@
 
 // Highlight current nav item
 var hasCurrent = false;
+var isindexpage = true;
 $('#main-nav > li').each(function () {
+	if(isindexpage){
+		isindexpage = false;
+		return true;
+	  }
 	var url = window.location.href;
-	if(url.toUpperCase().indexOf($(this).text().trim().toUpperCase()) != -1){
+	if(url.toUpperCase().indexOf($(this).attr("linktext").trim().toUpperCase()) != -1){
 		$(this).addClass('current-menu-item current_page_item');
 		hasCurrent = true;
 	} else {
